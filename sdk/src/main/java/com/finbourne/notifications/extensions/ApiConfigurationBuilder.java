@@ -70,7 +70,7 @@ public class ApiConfigurationBuilder {
             String password = (String) apiConfig.get("password");
             String clientId = (String) apiConfig.get("clientId");
             String clientSecret = (String) apiConfig.get("clientSecret");
-            String apiUrl = (String) apiConfig.get("apiUrl");
+            String apiUrl = (String) apiConfig.get("notificationsApiUrl");
             String applicationName = apiConfig.containsKey("applicationName") ? (String) apiConfig.get("applicationName") : null;
 
             String proxyAddress = null;
