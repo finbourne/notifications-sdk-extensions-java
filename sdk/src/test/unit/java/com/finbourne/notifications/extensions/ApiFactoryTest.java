@@ -35,39 +35,39 @@ public class ApiFactoryTest {
     // General Cases
 
     @Test
-    public void build_ForEventsApi_ReturnPortfolioApi(){
+    public void build_ForEventsApi_ReturnEventsApi(){
         EventsApi eventsApi = apiFactory.build(EventsApi.class);
         assertThat(eventsApi, instanceOf(EventsApi.class));
     }
 
     @Test
-    public void build_ForEventTypesApi_ReturnTransactionPortfolioApi(){
+    public void build_ForEventTypesApi_ReturnEventTypesApi(){
         EventTypesApi eventTypesApi = apiFactory.build(EventTypesApi.class);
         assertThat(eventTypesApi, instanceOf(EventTypesApi.class));
     }
 
     @Test
-    public void build_ForNotificationsApi_ReturnAggregationApi(){
+    public void build_ForNotificationsApi_ReturnNotificationsApi(){
         NotificationsApi notificationsApi = apiFactory.build(NotificationsApi.class);
         assertThat(notificationsApi, instanceOf(NotificationsApi.class));
     }
 
     @Test
-    public void build_ForMessagesApi_ReturnAggregationApi(){
+    public void build_ForMessagesApi_ReturnMessagesApi(){
         MessagesApi messagesApi = apiFactory.build(MessagesApi.class);
         assertThat(messagesApi, instanceOf(MessagesApi.class));
     }
 
     @Test
-    public void build_ForApplicationMetadataApi_ReturnAggregationApi(){
+    public void build_ForApplicationMetadataApi_ReturnApplicationMetadataApi(){
         ApplicationMetadataApi applicationMetadataApi = apiFactory.build(ApplicationMetadataApi.class);
         assertThat(applicationMetadataApi, instanceOf(ApplicationMetadataApi.class));
     }
 
     @Test
-    public void build_ForASubscriptionsApi_ReturnAggregationApi(){
-        SubscriptionsApi applicationMetadataApi = apiFactory.build(SubscriptionsApi.class);
-        assertThat(applicationMetadataApi, instanceOf(SubscriptionsApi.class));
+    public void build_ForASubscriptionsApi_ReturnSubscriptionsApi(){
+        SubscriptionsApi subscriptionsApi = apiFactory.build(SubscriptionsApi.class);
+        assertThat(subscriptionsApi, instanceOf(SubscriptionsApi.class));
     }
 
     @Test

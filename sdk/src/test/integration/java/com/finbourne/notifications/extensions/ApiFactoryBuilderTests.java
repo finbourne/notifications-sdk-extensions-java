@@ -27,9 +27,9 @@ public class ApiFactoryBuilderTests {
     private static void assertThatFactoryBuiltApiCanMakeLUSIDCalls(ApiFactory apiFactory) throws ApiException {
         EventTypesApi eventTypesApi = apiFactory.build(EventTypesApi.class);
         ResourceListOfEventTypeSchema listOfEventTypeSchema = eventTypesApi.listEventTypes();
-        assertThat("Folders API created by factory should return root folder"
+        assertThat("Event type API created by factory should return event types"
                 , listOfEventTypeSchema, is(notNullValue()));
-        assertThat("Root folder contents types returned by the folders API should not be empty",
+        assertThat("Event types contents types returned by the event types API should not be empty",
                 listOfEventTypeSchema.getValues(), not(empty()));
     }
 
