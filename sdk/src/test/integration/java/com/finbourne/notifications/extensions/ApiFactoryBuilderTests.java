@@ -21,10 +21,10 @@ public class ApiFactoryBuilderTests {
     public void build_WithExistingConfigurationFile_ShouldReturnFactory() throws ApiException, ApiConfigurationException, FinbourneTokenException {
         ApiFactory apiFactory = ApiFactoryBuilder.build(CredentialsSource.credentialsFile);
         assertThat(apiFactory, is(notNullValue()));
-        assertThatFactoryBuiltApiCanMakeLUSIDCalls(apiFactory);
+        assertThatFactoryBuiltApiCanMakeApiCalls(apiFactory);
     }
 
-    private static void assertThatFactoryBuiltApiCanMakeLUSIDCalls(ApiFactory apiFactory) throws ApiException {
+    private static void assertThatFactoryBuiltApiCanMakeApiCalls(ApiFactory apiFactory) throws ApiException {
         EventTypesApi eventTypesApi = apiFactory.build(EventTypesApi.class);
         ResourceListOfEventTypeSchema listOfEventTypeSchema = eventTypesApi.listEventTypes();
         assertThat("Event type API created by factory should return event types"

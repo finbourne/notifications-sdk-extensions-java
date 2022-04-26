@@ -12,7 +12,6 @@ services:
       - FBN_PASSWORD
       - FBN_CLIENT_ID
       - FBN_CLIENT_SECRET
-      - FBN_LUSID_API_URL
       - FBN_APP_NAME
       - FBN_NOTIFICATIONS_API_URL
     volumes:

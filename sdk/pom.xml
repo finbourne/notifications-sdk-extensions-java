@@ -7,7 +7,7 @@
     <name>notifications-sdk-extensions</name>
     <version>0.1.328-SNAPSHOT</version>
     <url>https://github.com/finbourne/notifications-sdk-extensions-java</url>
-    <description>OpenAPI Java</description>
+    <description>FINBOURNE Notifications SDK Extensions</description>
     <scm>
         <connection>git@github.com:finbourne/notifications-sdk-extensions-java.git</connection>
         <developerConnection>git@github.com:finbourne/notifications-sdk-extensions-java.git</developerConnection>
@@ -264,7 +264,7 @@
         <dependency>
             <groupId>com.finbourne</groupId>
             <artifactId>notifications-sdk-preview</artifactId>
-            <version>-20220421.100420-1</version>
+            <version>0.1.296-20220426.084338-1</version>
         </dependency>
 
         <!-- HTTP client: jersey-client -->
