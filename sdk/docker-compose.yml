@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  notifications-sdk-java-preview-test:
+    build: .
+    container_name: notifications-sdk-extensions-java-test
+    image: maven:3.8.5-jdk-11
+    environment:
+      - FBN_TOKEN_URL
+      - FBN_USERNAME
+      - FBN_PASSWORD
+      - FBN_CLIENT_ID
+      - FBN_CLIENT_SECRET
+      - FBN_APP_NAME
+      - FBN_NOTIFICATIONS_API_URL
+    volumes:
+      - .:/usr/src
