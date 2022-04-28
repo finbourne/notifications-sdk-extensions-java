@@ -7,18 +7,19 @@ import java.net.InetSocketAddress;
 import java.net.Proxy;
 
 /**
- * Builds http client to communicate to Notifications API instances.
- */
+* Builds http client to communicate to notifications API instances.
+*
+*/
 public class HttpClientFactory {
 
     /**
-     * Builds a {@link OkHttpClient} from a {@link ApiConfiguration} to make
-     * calls to the Notifications API.
-     *
-     * @param apiConfiguration configuration to connect to Notifications API
-     * @return an client for http calls to Notifications API
-     */
-    public OkHttpClient build(ApiConfiguration apiConfiguration) {
+    *  Builds a {@link OkHttpClient} from a {@link ApiConfiguration} to make
+    *  calls to the notifications API.
+    *
+    * @param apiConfiguration configuration to connect to notifications API
+    * @return an client for http calls to notifications API
+    */
+    public OkHttpClient build(ApiConfiguration apiConfiguration){
         final OkHttpClient httpClient;
 
         //  use a proxy if given
@@ -33,9 +34,10 @@ public class HttpClientFactory {
                         return response.request().newBuilder()
                                 .header("Proxy-Authorization", credential)
                                 .build();
-                    })
-                    .build();
-        } else {
+            })
+            .build();
+        }
+        else {
             httpClient = new OkHttpClient();
         }
         return httpClient;

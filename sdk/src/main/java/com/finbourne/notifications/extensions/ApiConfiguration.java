@@ -11,7 +11,7 @@ public class ApiConfiguration {
     private String tokenUrl;
 
     /**
-     * Username
+     *  Username
      */
     private String username;
 
@@ -27,12 +27,12 @@ public class ApiConfiguration {
     private String clientId;
 
     /**
-     * OAuth2 Client Secret
+     *  OAuth2 Client Secret
      */
     private String clientSecret;
 
     /**
-     * Notifications API Url
+     * notifications API Url
      */
     private String apiUrl;
 
