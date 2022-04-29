@@ -5,7 +5,7 @@
     <artifactId>notifications-sdk-extensions</artifactId>
     <packaging>jar</packaging>
     <name>notifications-sdk-extensions</name>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <url>https://github.com/finbourne/notifications-sdk-extensions-java</url>
     <description>FINBOURNE Notifications SDK Extensions</description>
     <scm>
