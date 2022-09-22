@@ -4,7 +4,7 @@ import com.finbourne.notifications.ApiClient;
 import com.finbourne.notifications.api.EventTypesApi;
 import com.finbourne.notifications.api.NotificationsApi;
 import com.finbourne.notifications.api.EventsApi;
-import com.finbourne.notifications.api.MessagesApi;
+import com.finbourne.notifications.api.DeliveriesApi;
 import com.finbourne.notifications.api.ApplicationMetadataApi;
 import com.finbourne.notifications.api.SubscriptionsApi;
 import com.finbourne.notifications.model.Notification;
@@ -53,9 +53,9 @@ public class ApiFactoryTest {
     }
 
     @Test
-    public void build_ForMessagesApi_ReturnMessagesApi(){
-        MessagesApi messagesApi = apiFactory.build(MessagesApi.class);
-        assertThat(messagesApi, instanceOf(MessagesApi.class));
+    public void build_ForDeliveriesApi_ReturnDeliveriesApi(){
+        DeliveriesApi deliveriesApi = apiFactory.build(DeliveriesApi.class);
+        assertThat(deliveriesApi, instanceOf(DeliveriesApi.class));
     }
 
     @Test
