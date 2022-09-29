@@ -5,7 +5,7 @@
     <artifactId>notifications-sdk-extensions</artifactId>
     <packaging>jar</packaging>
     <name>notifications-sdk-extensions</name>
-    <version>0.20.0-SNAPSHOT</version>
+    <version>(,1.0]</version>
     <url>https://github.com/finbourne/notifications-sdk-extensions-java</url>
     <description>FINBOURNE Notifications SDK Extensions</description>
     <scm>
@@ -401,6 +401,6 @@
         <junit-version>4.13.1</junit-version>
         <hamcrest-version>1.3</hamcrest-version>
         <mockito-version>3.3.3</mockito-version>
-        <notifications-sdk-version>0.1.480-SNAPSHOT</notifications-sdk-version>
+        <notifications-sdk-version>0.1.486-SNAPSHOT</notifications-sdk-version>
     </properties>
 </project>
